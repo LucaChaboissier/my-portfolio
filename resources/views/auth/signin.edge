@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <script src="{{ asset('assets/signin.js')}}"></script>
+        <link rel="stylesheet" type="text/css" href="{{ asset('assets/signin.css') }}">
+        <title>Connexion</title>
+    </head>
+    <body class="body-signin">
+        {{--  <header class="header">
+            <div class="header-container">
+              <nav class="header-nav">
+                <ul>
+                  <li class="header-nav">
+                    <a class="white-font" href="/"> Page d'accueil </a>
+                  </li>
+                </ul>  
+                <ul>
+                  <li class="header-nav">
+                    <a class="white-font" href="/auth/signin"> Se connecter </a>
+          </header>  --}}
+      <div id="signin">
+        <form class="form-signin" action="/auth/login" method="POST">
+          <h1>Connexion</h1>
+            <label for="email">Adresse e-mail</label>
+            <input class="form-control" type="email" name="email" id="" placeholder="Adresse e-mail" required autofocus>
+            <label for="password">Mot de passe</label>
+            <input class="form-control" type="password" name="password" id="" placeholder="Mot de passe" required>
+            <button class="btn btn-primary" type="submit">Se connecter</button>
+            <p></p>
+            <a href="/">Retour au menu </a>
+            {{--  <p> Vous n'avez pas de compte ? <a href="/auth/signup" id="signup">Inscrivez-vous ici.</a></p>  --}}
+        </form>
+      </div>
+      {{--  <div id="signup">
+        <form class="form-signin" action="/auth/login" method="POST">
+          <h1>Créer un compte</h1>
+            <label for="email">Adresse e-mail</label>
+            <input class="form-control" type="email" name="email" id="" placeholder="Adresse e-mail" required autofocus>
+            <label for="password">Mot de passe</label>
+            <input class="form-control" type="password" name="password" id="" placeholder="Mot de passe" required>
+            <button class="btn btn-primary" type="submit">Se connecter</button>
+            <p> Déjà inscrit ? <a href="#" id="signin">Connectez-vous ici.</a></p>
+        </form>
+      </div>  --}}
+    </body>
+</html>

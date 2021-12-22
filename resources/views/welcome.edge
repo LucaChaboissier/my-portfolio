@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" type="text/css" href="{{ asset('assets/app.css')}}">
+  <title>Luca Chaboissier | Portfolio</title>
+  @entryPointStyles('app')
+  @entryPointScripts('app')
+</head>
+<body id="body" style="height: 100%">
+  <main>
+  <!-- nav -->
+  <header id="header">
+    <div class="header-container">
+      {{--  <a href="#" class="side-nav-logo fas fa-bars"></i></a>  --}}
+      <nav class="header-nav">
+        <ul class="nav-list">
+          <li class="header-nav">
+            <a class="white-font" href="/">Page d'accueil</a>
+          </li>
+          <li class="header-nav">
+            <a class="white-font" href="#presentation">Présentation</a>
+          </li>
+          <li class="header-nav">
+            <a class="white-font" href="#career">Parcours</a>
+          </li>
+          <li class="header-nav">
+            <a class="white-font" href="#experiences">Expériences</a>
+          </li>
+          <li class="header-nav">
+            <a class="white-font" href="#skills">Compétences</a>
+          </li>
+        <ul> </ul> 
+      </nav>
+    </div>     
+  </header>
+  <!-- nav end -->
+  <!-- Home -->
+  <section id="home">
+    <div>
+      <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Background home">
+    </div>
+      <div class="title-home">
+        <h1 style="text-shadow: rgb(46, 46, 46) 2px 5px 10px"> Luca Chaboissier </h1>
+        <p style="text-shadow: rgb(46, 46, 46) 2px 5px 10px"> Étudiant en BTS SIO </p>
+    </div>
+  </section>
+  <section id="presentation">
+    <div class="title-presentation">
+    <h1 style="align-content: center"> A propos de moi </h1>
+    </div>
+    <div class="presentation-container">
+      <div class="image-column">
+        <img alt="Photo - Luca Chaboissier" src="https://cdn.discordapp.com/attachments/845768919724720171/858830789303074876/IMG_20210626_165750.jpg">
+        {{--  <img alt="Photo - ???" src="https://cdn.pixabay.com/photo/2017/06/13/12/53/profile-2398782_960_720.png">  --}}
+      </div>
+      <div class="text-column">
+        <p>
+          Actuellement en formation de BTS SIO au campus de Notre-Dame du Roc à La Roche-sur-Yon, je me dirige vers un domaine qui me passionne, précisément dans la programmation et dans la création de sites Web.
+        </p>
+        <br>
+        <div>
+          <ul class="presentation-social-network">
+            <li title="Ma page Linkedin"><a class="linkedin" href="https://www.linkedin.com/in/luca-chaboissier-936769205/"><i class="fa fa-linkedin"></i></a></li>
+            <li title="Ma page GitHub"><a class="github" href="https://github.com/Endeur-85"><i class="fa fa-github"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <br><br>
+    <a href="/cv" class="btn btn-cv" title="Cliquez ici pour télécharger mon CV">Télécharger mon CV</a>
+  </section>
+  <!--  About me END  -->
+  <!-- Career -->
+  <section id="career">
+    <div class="career-presentation">
+      <h1 style="align-content: center"> Mon parcours </h1>
+    </div>
+    <div class="timeline">
+      <div class="entry-career">
+        <div class="title-career">
+          <h3>2020 - 2021</h3>
+          <p>La Roche-sur-Yon, France</p>
+        </div>
+      <div class="body">
+        <p> BTS SIO Option SLAM — Campus Notre-Dame du Roc (En cours de formation)
+        </p>
+        <ul>
+          <li>
+            — Choix de spécialité SLAM (Solutions Logicielles et Applications Métiers).
+          </li>
+          <li>
+            — Découverte de langages de programmation Python, C#, SQL, PHP à l'aide des outils de développement (Visual Studio, PHPStorm).
+          </li>
+          <li>
+            — Apprentissage des systèmes d'exploitation Windows et Linux.
+          </li>
+        </ul>
+      </div>
+      <div class="entry-career">
+        <div class="title-career">
+          <h3>2018 - 2020</h3>
+          <p>La Roche-sur-Yon, France</p>
+        </div>
+      <div class="body">
+        <p> BAC STI2D Option SIN
+        </p>
+        <ul>
+          <li>
+            — Choix de spécialité SIN (Système d'Information et Numérique).
+          </li>
+          <li>
+            — Découverte de l'innovation technologique dans le respect de l'environnement.
+          </li>
+          <li>
+            — Réalisation et programmation d'un prototype à partir du langage de programmation C.
+          </li>
+        </ul>
+        </div>
+  </section>
+  <!-- Career END -->
+  <!-- Experiences -->
+  <section id="experiences">
+    <div class="experiences-presentation">
+      <h1 style="align-content: center"> Mes expériences </h1>
+    </div>
+    <div class="timeline">
+      <div class="entry-experiences">
+        <div class="title-experiences">
+          <h3>Mai - Juin 2021</h3>
+          <p>La Roche-sur-Yon, France</p>
+        </div>
+      <div class="body">
+        <p> Stagiaire - Leadcode
+        </p>
+        <ul>
+          <li>
+            — Conception d’une application Web (Utilisation d’un framework FrontEnd + Test unitaires et d’intégration).
+          </li>
+          <li>
+            — Compréhension de l’écosystème Web.
+          </li>
+          <li>
+            — Conception / Apprentissage des API (AdonisJS).
+          </li>
+        </ul>
+      </div>
+      <div class="entry-experiences">
+        <div class="title-experiences">
+          <h3>Janvier 2017</h3>
+          <p>Aizenay, France</p>
+        </div>
+      <div class="body">
+        <p> Stagiaire - L'Adresse
+        </p>
+        <ul>
+          <li>
+            — Recherche de biens immobilier.
+          </li>
+        </ul>
+      </div>
+  </section>
+  <!-- Experiences END -->
+  <!-- Skills -->
+    <section id="skills">
+      <div class="skills-presentation">
+        <h1 style="align-content: center"> Mes compétences </h1>
+      </div>
+      <div class="skills-container">
+        <div class="skills-image">
+          <img src="https://img.icons8.com/color/2048/000000/html-5--v1.png" alt="HTML5" title="HTML5"/>
+          <img src="https://img.icons8.com/color/2048/000000/css3.png" alt="CSS3" title="CSS3" />
+          <img src="http://pngimg.com/uploads/php/php_PNG50.png" alt="PHP" title="PHP" />
+          <img src="https://img.icons8.com/color/2048/000000/javascript.png"  alt="JS" title="JavaScript" />
+          <img src="https://img.icons8.com/color/2048/000000/typescript.png" alt="JS" title="TypeScript" />
+          <img src="https://i2.wp.com/blogs.perficient.com/files/2015/09/Azure-SQL-Database.png?ssl=1" alt="SQL" title="SQL" />
+    </section>
+    <!-- Skills END -->
+    <!-- Footer -->
+    <footer id="footer">
+      <div>
+        <ul class="social-network">
+          <li><a class="linkedin" href="https://www.linkedin.com/in/luca-chaboissier-936769205/"><i class="fa fa-linkedin" title="Page Linkedin"></i></a></li>
+          <li><a class="github" href="https://github.com/Endeur-85"><i class="fa fa-github" title="Page GitHub"></i></a></li>
+        </ul>
+        <ul class="list-menu">
+          <li class="list-menu-content"><a href="/">Page d'accueil</a></li>
+          <a class="line"> — </a>
+          <li class="list-menu-content"><a href="#presentation">Présentation</a></li>
+          <a class="line"> — </a>
+          <li class="list-menu-content"><a href="#skills">Compétences</a></li>
+          <a class="line"> — </a>
+          <li class="list-menu-content"><a href="/auth/signin">Connexion</a></li>
+      </ul>
+      </div>
+      <p> © Copyright 2021 - Luca CHABOISSIER - Tous droits réservés. </p>
+    </footer>
+    <!-- Footer END -->
+    <!-- Button Back-to-top -->
+    <a id="back-to-top" href="#header"></a>
+    <!-- Button Back-to-top END-->
+  {{--  <main>
+    <div>
+      <h1 class="title"> It Works! </h1>
+      <p class="subtitle">
+        Congratulations, you have just created your first AdonisJS app.
+      </p>
+
+      <ul>
+        <li>
+          The route for this page is defined inside <code>start/routes.ts</code> file
+        </li>
+
+        <li>
+          You can update this page by editing <code>resources/views/welcome.edge</code> file
+        </li>
+
+        <li>
+          If you run into problems, you can reach us on <a href="https://discord.gg/vDcEjq6?">Discord</a> or the <a href="https://forum.adonisjs.com/">Forum</a>.
+        </li>
+
+        <li>
+          If you run into problems, you can reach us on <a href="https://discord.gg/vDcEjq6?">Discord</a> or the <a href="https://forum.adonisjs.com/">Forum</a>.
+        </li>
+        
+        <li>
+          If you run into problems, you can reach us on <a href="https://discord.gg/vDcEjq6?">Discord</a> or the <a href="https://forum.adonisjs.com/">Forum</a>.
+        </li>
+        
+        <li>
+          If you run into problems, you can reach us on <a href="https://discord.gg/vDcEjq6?">Discord</a> or the <a href="https://forum.adonisjs.com/">Forum</a>.
+        </li>
+        
+        <li>
+          If you run into problems, you can reach us on <a href="https://discord.gg/vDcEjq6?">Discord</a> or the <a href="https://forum.adonisjs.com/">Forum</a>.
+        </li>
+        
+        <li>
+          If you run into problems, you can reach us on <a href="https://discord.gg/vDcEjq6?">Discord</a> or the <a href="https://forum.adonisjs.com/">Forum</a>.
+        </li>
+        
+        <li>
+          If you run into problems, you can reach us on <a href="https://discord.gg/vDcEjq6?">Discord</a> or the <a href="https://forum.adonisjs.com/">Forum</a>.
+        </li>
+        
+        <li>
+          If you run into problems, you can reach us on <a href="https://discord.gg/vDcEjq6?">Discord</a> or the <a href="https://forum.adonisjs.com/">Forum</a>.
+        </li>
+        
+        <li>
+          If you run into problems, you can reach us on <a href="https://discord.gg/vDcEjq6?">Discord</a> or the <a href="https://forum.adonisjs.com/">Forum</a>.
+        </li>
+        
+        <li>
+          If you run into problems, you can reach us on <a href="https://discord.gg/vDcEjq6?">Discord</a> or the <a href="https://forum.adonisjs.com/">Forum</a>.
+        </li>
+        
+        <li>
+          If you run into problems, you can reach us on <a href="https://discord.gg/vDcEjq6?">Discord</a> or the <a href="https://forum.adonisjs.com/">Forum</a>.
+        </li>
+        
+        
+      </ul>
+    </div>
+  </main>  --}}
+  </main>
+</body>
+</html>
